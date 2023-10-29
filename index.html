@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Enterprise Logo">
+      </div>
+      <div class="menu-navbar">
+        <ul class="list">
+          <li class="list-item" onclick="toggleMenu('featuresId')">
+            <a href="#">
+              <span>
+                Feature
+                <img id="img-featuresId-arrow" src="images/icon-arrow-down.svg" alt="arrow down">
+                <div id="featuresId" class="options">
+                  <ul class="menu-item">
+                    <li>
+                      <a class="item-li" href="#">
+                        <img src="images/icon-todo.svg" alt="Todo icon">
+                        <div>Todo List</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="item-li" href="#">
+                        <img src="images/icon-calendar.svg" alt="Calendar icon">
+                        <div>Calendar</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="item-li" href="#">
+                        <img src="images/icon-reminders.svg" alt="Todo icon">
+                        <div>Reminders</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="item-li" href="#">
+                        <img src="images/icon-planning.svg" alt="Todo icon">
+                        <div>Planning</div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </span>
+            </a>
+          </li>
+          <li class="list-item" onclick="toggleMenu('company')">
+            <a href="#">
+              <span>
+                Company
+                <img id="img-company-arrow" src="images/icon-arrow-down.svg" alt="">
+                <div id="company" class="options">
+                  <ul class="menu-item">
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Blog</a></li>
+                  </ul>
+                </div>
+              </span>
+            </a>
+          </li>
+          <li class="list-item"><a href="#">Careers</a></li>
+          <li class="list-item"><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="signIn">
+        <span class="login">Login</span>
+        <span class="register">Register</span>
+      </div>
+      <div class="sanguichito" onclick="openMenu()">
+        <img src="images/icon-menu.svg" alt="">
+      </div>
+    </nav>
+    <div class="container-presentation">
+      <section class="presentation">
+        <div class="title">
+          <h1>Make remote work</h1>
+        </div>
+        <div class="description">
+          <p class="text">
+            Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+          </p>
+        </div>
+        <button>
+          Learn more
+        </button>
+        <div class="companies-image">
+          <img src="images/client-databiz.svg" alt="">
+          <img src="images/client-audiophile.svg" alt="">
+          <img src="images/client-meet.svg" alt="">
+          <img src="images/client-maker.svg" alt="">
+        </div>
+      </section>
+
+      <section class="banner">
+        <img class="img-banner" src="images/image-hero-desktop.png" alt="banner">
+      </section>
+    </div>
+
+  </div>
+
+  <div id="vertical-menu">
+    <nav class="navbar-mobile">
+      <div class="sanguichito-cierre">
+        <img src="images/icon-close-menu.svg" alt="Close Menu" onclick="closeMenu()">
+      </div>
+      <ul id="list-vertical">
+        <li class="list-item" onclick="toggleMenu('featuresId-mobile')">
+          <a href="#">
+            <span>
+              Feature
+              <img id="img-featuresId-mobile-arrow" src="images/icon-arrow-down.svg" alt="">
+              <div id="featuresId-mobile" class="options">
+                <ul class="menu-item">
+                  <li>
+                    <a class="item-li" href="#">
+                      <img src="images/icon-todo.svg" alt="Todo icon">
+                      <div>Todo List</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="item-li" href="#">
+                      <img src="images/icon-calendar.svg" alt="Calendar icon">
+                      <div>Calendar</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="item-li" href="#">
+                      <img src="images/icon-reminders.svg" alt="Todo icon">
+                      <div>Reminders</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="item-li" href="#">
+                      <img src="images/icon-planning.svg" alt="Todo icon">
+                      <div>Planning</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </span>
+          </a>
+        </li>
+        <li class="list-item" onclick="toggleMenu('company-mobile')">
+          <a href="#">
+            <span>
+              Company
+              <img id="img-company-mobile-arrow" src="images/icon-arrow-down.svg" alt="">
+              <div id="company-mobile" class="options">
+                <ul class="menu-item">
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+            </span>
+          </a>
+        </li>
+        <li class="list-item"><a href="#"><span>Careers</span></a></li>
+        <li class="list-item"><a href="#"><span>About</span></a></li>
+      </ul>
+      <div class="signIn-mobile">
+        <span class="login">Login</span>
+        <span class="register">Register</span>
+      </div>
+    </nav>
+  </div>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
